@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Задача 5</h1>
+    <p>
+        Дано кількість секунд, що пройшла від початку доби. 
+        Визначити скільки це годин і хвилин.
+    </p>
+
+    <script>
+        // 1.Введення необхідних даних
+    let dataNewDay = new Date()
+    let today =  new Date(dataNewDay.getFullYear(), dataNewDay.getMonth(), dataNewDay.getDate()) 
+    let quantitySecondsNewDay = Math.round((dataNewDay - today) / 1000) 
+
+    // 2.Обчислення результату
+    let quantityHoursNewDay = parseInt(quantitySecondsNewDay / 3600) 
+    let quantityMinutesNewDay = parseInt((quantitySecondsNewDay % 3600) / 60)
+
+
+    // 3.Виведення результату
+    document.write(`З почату нової доби пройшло ${quantitySecondsNewDay} секунд` + `<br>` +
+                    `що становить ${quantityHoursNewDay} годин ${quantityMinutesNewDay} хвилин`)
+    </script>
+</body>
+</html>

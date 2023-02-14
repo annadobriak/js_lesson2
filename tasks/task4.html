@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Задача 4</h1>
+    <p>Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</p>
+
+    <script>
+        // 1.Введення необхідних даних
+        let distanceCentimeter = parseFloat(prompt('Введіть відстань в сантиметрах' , '0' ))
+
+        // 2.Обчислення результату
+        let distanceMeter = Math.round(distanceCentimeter / 100) 
+        let distanceKilometer = (distanceCentimeter / 100000).toFixed(2)
+
+        // 3.Виведення результату
+        document.write(`Ви пройшли ${distanceCentimeter} см` + `<br>` +
+                        `або ${distanceMeter} м` + `<br>` +
+                        `або ${distanceKilometer} км` + `<br>`)
+    </script>
+</body>
+</html>

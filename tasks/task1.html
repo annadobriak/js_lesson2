@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Задача 1</h1>
+    <p>
+        Знайти суму, добуток та частку двох дійсних чисел. 
+        Результат вивести у формі таблиці
+    </p>
+
+    <script>
+// 1.Введення необхідних даних
+let realNumber1 = parseFloat(prompt('Введіть значення дійсного числа 1' , '0' ))
+let realNumber2 = parseFloat(prompt('Введіть значення дійсного числа 2' , '0' ))
+
+// 2.Обчислення результату
+let sumRealNumber = realNumber1 + realNumber2 
+let multiplicationRealNumber = realNumber1 * realNumber2
+let divisionRealNumber = realNumber1 / realNumber2
+
+// 3.Виведення результату
+document.write(`<table> 
+                    <tr>
+                        <td></td>
+                        <td>Значення числа 1</td>
+                        <td>Значення числа 2</td>
+                        <td>Результат</td>
+                    </tr>
+                    <tr>
+                        <td>Сумма двох чисел</td>
+                        <td>${realNumber1}</td>
+                        <td>${realNumber2}</td>
+                        <td>${sumRealNumber}</td>
+                    </tr>
+                    <tr>
+                        <td>Добуток двох чисел</td>
+                        <td>${realNumber1}</td>
+                        <td>${realNumber2}</td>
+                        <td>${multiplicationRealNumber}</td>
+                    </tr>
+                    <tr>
+                        <td>Частка двох чисел</td>
+                        <td>${realNumber1}</td>
+                        <td>${realNumber2}</td>
+                        <td>${divisionRealNumber}</td>
+                    </tr>
+                </table>`)
+    </script>
+</body>
+</html>
